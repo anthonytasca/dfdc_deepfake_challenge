@@ -356,6 +356,5 @@ def train_epoch(current_epoch, loss_functions, model, optimizer, scheduler, trai
             summary_writer.add_scalar('group{}/lr'.format(idx), float(lr), global_step=current_epoch)
         summary_writer.add_scalar('train/loss', float(losses.avg), global_step=current_epoch)
 
-
 if __name__ == '__main__':
     main()
